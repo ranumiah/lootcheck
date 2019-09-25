@@ -13,3 +13,10 @@ export const deposit = deposit => {
         deposit
     }
 }
+
+export const withdrawal = withdrawal => {
+    return {
+        type: constants.WITHDRAWAL,
+        withdrawal
+    }
+}
