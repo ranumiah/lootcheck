@@ -13,8 +13,8 @@ const balance = (state = 0, action) => {
         case constants.DEPOSIT:
             balance = state + action.deposit;
             break;
-        case constants.WITHDRAWAL:
-            balance = state - action.withdrawal;
+        case constants.WITHDRAW:
+            balance = state - action.withdraw;
             break;
         default:
             balance = parseInt(read_cookie(BALANCE_COOKIE), 10) || state;
